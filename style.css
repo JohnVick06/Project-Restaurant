@@ -1,0 +1,92 @@
+@charset "UTF-8";
+ /* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: mexican;
+    src: url(fonts/mexicana.ttf) format("truetype"), url(fonts/mexicanahollow.ttf) format("truetype");
+}
+/* Color Theme Swatches in Hex */
+.Tylko-–-Spring-1-hex { color: #F2C46D; }
+.Tylko-–-Spring-2-hex { color: #59360A; }
+.Tylko-–-Spring-3-hex { color: #D98A29; }
+.Tylko-–-Spring-4-hex { color: #A62B1F; }
+.Tylko-–-Spring-5-hex { color: #400606; }
+
+
+
+:root{
+    --cor0 : #F2C46D;
+    --cor1 : #59360A;
+    --cor2 : #D98A29;
+    --cor3 : #A62B1F; 
+    --cor4 : #3d0606;
+    --corvar:#d8c5a1;
+    --corfont:#360606;
+
+
+    --fonte_principal: mexican, cursive;
+    --fonte_cardapio : Oswald, cursive; 
+    --fonte_padrao : Helvetica, verdana, arial, sans-serif; 
+}
+
+* {
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--corvar);
+    color: var(--corfont);
+    font-family: var(--fonte_cardapio);
+}
+
+header {
+    background-color: var(--cor4);
+    height: 165px;
+    box-shadow: -1px 4px 12px 0px black;
+    padding-bottom: 20px;
+}
+
+header  h1 {
+    font-family: var(--fonte_principal);
+    color: var(--cor2);
+    font-size: 4.5em;
+    padding: 15px 40px 20px 40px;
+    text-align: center;
+}
+
+nav{
+    display: block;
+    height: 10px;
+}
+header nav{
+    text-align: center;
+    margin: auto;
+}
+
+nav a{
+    height: 30px;
+    margin-right: 40px;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+    color: var(--cor2);
+    padding: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    background-color: var(--cor1);
+    border-radius: 15px;
+    padding: 10px;
+    transition-duration: 0.5s;
+    color: white;
+}
+
+footer {
+    background-color: var(--cor4);
+}
