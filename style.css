@@ -49,6 +49,10 @@ header {
     padding-bottom: 20px;
 }
 
+h1{
+    cursor: pointer;
+}
+
 header  h1 {
     font-family: var(--fonte_principal);
     color: var(--cor2);
@@ -75,17 +79,26 @@ nav a{
     color: var(--cor2);
     padding: 10px;
     padding-top: 10px;
-    border-radius: 10px;
+    
 }
 
 nav a:hover{
     text-decoration: underline;
-    background-color: var(--cor1);
+    background-color: rgba(52, 3, 3, 0.952);
     border-radius: 15px;
     padding: 10px;
     transition-duration: 0.5s;
-    color: white;
+    color: #facb92;
 }
+
+div#image{
+    text-align: center; 
+    
+    /* NÃO CONSIGO, queria a img retangular e ficar pique carrossel msm */
+} 
+
+
+
 
 footer {
     background-color: var(--cor4);
